@@ -2,10 +2,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default {
-  HOST: process.env.DB_HOST,
-  USER: process.env.DB_USER,
-  PASSWORD: process.env.DB_PASSWORD,
-  DB: process.env.DB_NAME,
+  HOST: "localhost",   // Cambiar esto
+  USER: "root",
+  PASSWORD: "",
+  DB: "jwt_auth_db",
   dialect: "mysql",
   pool: {
     max: 5,
