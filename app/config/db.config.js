@@ -2,12 +2,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default {
-  HOST: process.env.DB_HOST,   // Usamos las variables de entorno del .env
-  USER: process.env.DB_USER,
-  PASSWORD: process.env.DB_PASSWORD,
-  DB: process.env.DB_NAME,
-  dialect: process.env.DB_DIALECT || 'mysql',  // Si no se especifica el dialecto, usa mysql por defecto
-  port: process.env.DB_PORT || 3306,  // Puerto por defecto 3306, pero puedes configurarlo en el .env
+  HOST: process.env.DB_HOST,        // Esto será localhost
+  USER: process.env.DB_USER,        // Esto será 'root' (por defecto en XAMPP)
+  PASSWORD: process.env.DB_PASSWORD, // Si tienes una contraseña, ponla aquí, si no, deja vacío
+  DB: process.env.DB_NAME,          // Aquí el nombre de tu base de datos
+  dialect: 'mysql',
   pool: {
     max: 5,
     min: 0,
