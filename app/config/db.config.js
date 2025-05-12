@@ -3,9 +3,9 @@ dotenv.config();
 
 export default {
   HOST: process.env.DB_HOST,
-  USER: process.env.DB_USER,
+  USER: process.env.DB_USERNAME,
   PASSWORD: process.env.DB_PASSWORD,
-  DB: process.env.DB_NAME,
+  DB: process.env.DB_DATABASE,
   PORT: process.env.DB_PORT || 3306,
   dialect: "mysql",
   pool: {
